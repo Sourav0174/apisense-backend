@@ -164,6 +164,7 @@ pip install -r requirements.txt
 
 # Configure environment variables
 cp .env.example .env
+# Then edit .env with your own database URL, secret key, and API credentials
 ```
 
 ### Run database migrations
@@ -214,7 +215,7 @@ EMAIL_VERIFICATION_TOKEN_EXPIRE_HOURS=24
 PASSWORD_RESET_TOKEN_EXPIRE_MINUTES=30
 ```
 
-See [`.env.example`](.env.example) for the full reference.
+[`.env.example`](.env.example) is committed to Git as a documented template with placeholder values. `.env` is gitignored and holds your local secrets — copy the example file and fill in your own credentials; never commit it.
 
 ---
 
